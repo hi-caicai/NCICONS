@@ -1,0 +1,32 @@
+{
+  "name": "NCICONS",
+  "version": "0.1.0",
+  "description": "NCICONS build with electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hi-caicai/NCICONS.git"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial"
+  ],
+  "author": "CaiCai",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/hi-caicai/NCICONS/issues"
+  },
+  "homepage": "https://github.com/hi-caicai/NCICONS",
+  "devDependencies": {
+    "electron-prebuilt": "^0.36.0",
+    "gulp-styl": "~1.1.0"
+  },
+  "dependencies": {
+    "scss": "~0.2.4"
+  }
+}
