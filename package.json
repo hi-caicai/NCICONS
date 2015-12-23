@@ -23,10 +23,10 @@
   },
   "homepage": "https://github.com/hi-caicai/NCICONS",
   "devDependencies": {
-    "electron-prebuilt": "^0.36.0",
-    "gulp-styl": "~1.1.0"
+    "electron-prebuilt": "^0.36.0"
   },
   "dependencies": {
+    "db": "~1.0.6",
     "scss": "~0.2.4"
   }
 }
