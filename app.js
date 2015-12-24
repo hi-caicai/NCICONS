@@ -11,6 +11,7 @@ app.get('/', function (req, res) {
       		var dataObject = results[i];
       		icon.title = dataObject.get("title");
       		icon.picUrl = dataObject.get("pic_url");
+          icon.downloadUrl = dataObject.get("download_url");
             //console.log(object);
             iconList.push(icon);
 
