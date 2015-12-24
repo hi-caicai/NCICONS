@@ -26,6 +26,7 @@
     "electron-prebuilt": "^0.36.0"
   },
   "dependencies": {
+    "avoscloud-sdk": "^0.6.7",
     "db": "~1.0.6",
     "scss": "~0.2.4"
   }
