@@ -14,10 +14,8 @@ query.find({
     for (var i = 0; i < results.length; i++) {
       var object = results[i];
       console.log(object.get('title'),object.get('pic_url'),object.get('download_url'));
-      document.getElementsByClassName('photo').innerHTML=object.get('pic_url');
-      //('#@3').innerHTML = 
+      document.getElementsByClassName('photo').style.property = "background-image:url(https://iconstore.co/wp-content/uploads/2015/12/ny-thumb.png)"
     }
-
   },
   error: function(error) {
     console.log('Error: ' + error.code + ' ' + error.message);
