@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>NCICONS</title>
-  <link rel="stylesheet" href="public/style/style.scss">
+  <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
   <div class="main">
@@ -20,19 +20,17 @@
     </div>
     <div class="list">
       <div class="icon_list">
-          <div class="photo" style="background-image:url(xxx)"></div>
+          {% for item in iconList %}
+          <div class="photo" style="background-image:url({{item.picUrl}})"></div>
             <div class="icon_name">
-          <p>New Year Free Icons</p>
+          <p>{{item.title}}</p>
         </div>
           <div class="download">
-            <a class="btn" href="https://iconstore.co/redirect/?icon-pack=free-icon-set-9D"> Download </a>
+            <a class="btn" href="xxx"> Download </a>
           </div>
+          {% endfor %}
       </div>
   </div>
-  <script src="public/js/close.js"></script>
-  <script src="public/js/data.js"></script>
-  <script>
-  document.getElementsByClassName('photo').style.property = "background-image:url(https://iconstore.co/wp-content/uploads/2015/12/ny-thumb.png)"
-  </script>
+  <script src="js/close.js"></script>
 </body>
 </html>

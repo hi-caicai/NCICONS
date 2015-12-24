@@ -2,6 +2,9 @@
 const electron = require('electron');
 const app = electron.app;  // Module to control application life.
 const BrowserWindow = electron.BrowserWindow;
+const server = require('./app');
+server.listen(3000);
+//var res = nunjucks.render('index.html', { username: 'James' });
 
 
   // Module to create native browser window.
@@ -26,7 +29,7 @@ app.on('ready', function() {
   mainWindow = new BrowserWindow({width: 360, height: 600,frame: false});
 
   // and load the index.html of the app.
-  mainWindow.loadURL('file://' + __dirname + '/index.html');
+  mainWindow.loadURL('http://localhost:3000/');
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
