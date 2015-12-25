@@ -2,7 +2,7 @@
 const electron = require('electron');
 const app = electron.app;  // Module to control application life.
 const BrowserWindow = electron.BrowserWindow;
-const server = require('./app');
+const server = require('./server');
 server.listen(3000);
 //var res = nunjucks.render('index.html', { username: 'James' });
 

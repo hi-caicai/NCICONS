@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>NCICONS</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/animate.css">
+</head>
+
+<body>
+  <div class="main animated fadeIn">
+    <div class="header">
+      <p class="logo">NCICONS</p>
+      <a btn href="#" id="close-btn"> 
+        <img src="https://os.alipayobjects.com/rmsportal/WTVrrOaRRjqNMUD.svg"/>
+      </a>
+      <div class="search">
+        <i class"search icon"></i>
+            <input class="input" placeholder="Type something about icons">
+        </input>
+      </div>
+    </div>
+    <div class="list animated fadeIn">
+      <div class="icon_list">
+          {% for item in iconList %}
+          <div class="photo" style="background-image:url({{item.picUrl}})"></div>
+            <div class="icon_name">
+          <p>{{item.title}}</p>
+        </div>
+          <div class="download">
+            <a class="btn" href="{{item.downloadUrl}}"> Download </a>
+          </div>
+          {% endfor %}
+      </div>
+  </div>
+  <script src="js/close.js"></script>
+</body>
+</html>

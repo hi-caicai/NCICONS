@@ -1,0 +1,104 @@
+body{
+    font-family:'PingFang SC', Helvetica, Arial, STHeitiSC, 'Heiti SC', 'Open Sans', 'Hiragino Sans GB', 'Microsoft YaHei', 微软雅黑, 'WenQuanYi Micro Hei', SimSun, sans-serif;
+	background-color: #fff;
+	font-size: 14px;
+	margin: 0px;
+	height: 100%;
+	overflow: hidden;
+}
+.main{
+	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	overflow: auto;
+    -webkit-app-region: drag;
+
+}
+.titlebar {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+  background-color: #fff;
+}
+
+.button {
+  -webkit-app-region: no-drag;
+}
+
+.header{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	position: fixed;
+	z-index: 9999;
+	background-color: #fff;
+	right: 0px;
+}
+.header p{
+	font-weight: bold;
+}
+.header a{
+	float: right;
+	margin-top: -40px;
+	margin-right: 10px;
+}
+.search{
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.input{
+	padding: 10px 10px;
+	width: 306px;
+	background: #FEFEFE;
+	border: 1px solid #D5D5D5;
+	border-radius: 100px;
+	font-size: 14px;
+	outline: none;
+}
+.icon_list{
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	padding-top: 20px;
+}
+.list{
+	padding-top: 100px;
+	margin: 0px 10px;
+}
+.photo{
+	height: 250px;
+	background: #FFFFFF;
+	box-shadow: 0px 9px 11px 0px rgba(131,160,187,0.36), 0px -1px 3px 0px rgba(229,229,229,0.50);
+	border-radius: 6px;
+	background-position: 100% 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.photo img{
+		width: 100%;
+}
+.icon_name{
+	padding-top: 10px;
+}
+.download{
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.download a{
+	text-decoration:none;
+}
+.btn{
+	/* Rectangle 7: */
+background: #6190FF;
+border-radius: 100px;
+padding: 8px 16px;
+color: #fff;
+cursor:pointer;
+box-shadow:0 1px 10px rgba(80, 123, 210, 0.4);
+}
+.btn:hover{
+	background:#4C7CF0;
+}
+::-webkit-scrollbar {width: 4px;height:6px;display: none;}

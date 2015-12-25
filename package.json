@@ -4,7 +4,11 @@
   "description": "NCICONS build with electron",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron main.js",
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && electron-packager ./ NCICONS --out=dist --platform=darwin --version=0.36.0 --arch=x64 --icon=assets/osx/NCICONS.icns",
+    "pack": "npm run build && electron-builder dist/NCICONS-darwin-x64/NCICONS.app --platform=osx --out=dist/NCICONS-darwin-x64 --config=builder.json"
+
   },
   "repository": {
     "type": "git",
@@ -23,16 +27,14 @@
   },
   "homepage": "https://github.com/hi-caicai/NCICONS",
   "devDependencies": {
-    "electron-prebuilt": "^0.36.0"
+    "electron-prebuilt": "^0.36.0",
+    "electron-packager": "^5.0.1",
+    "electron-builder": "^2.0.0"
+
   },
   "dependencies": {
     "avoscloud-sdk": "^0.6.7",
-    "db": "~1.0.6",
     "express": "~4.13.3",
-    "jade": "~1.11.0",
-    "koa": "~1.1.2",
-    "koa-route": "~3.0.0",
-    "koa-static": "~1.5.2",
     "nunjucks": "~2.2.0",
     "scss": "~0.2.4"
   }
