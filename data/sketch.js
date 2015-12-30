@@ -38,7 +38,7 @@ var parseIcon = function(html) {
 function storeIcons(icons) {
 
 	var AV = require('avoscloud-sdk');
-	AV.initialize('17gDdI1zQ01B09yvydyOl6xx-gzGzoHsz', 'noCf71OYtF1WFTrRsp8VkLxv');
+	AV.initialize(ID, Key);
 	console.log('total icons : ' + icons.length);
 	icons.forEach(function(item) {
 
