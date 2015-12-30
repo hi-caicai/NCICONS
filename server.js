@@ -10,8 +10,8 @@ app.get('/', function (req, res) {
       		var icon = {};
       		var dataObject = results[i];
       		icon.title = dataObject.get("title");
-      		icon.picUrl = dataObject.get("pic_url");
-          icon.downloadUrl = dataObject.get("download_url");
+      		icon.picUrl = dataObject.get("img");
+          icon.downloadUrl = dataObject.get("url");
             //console.log(object);
             iconList.push(icon);
 
@@ -31,6 +31,6 @@ app.get('/detail', function(req, res) {
 	res.send("heeheee")
 
 });
-
+//app.listen(4000);
 module.exports = app;
  
