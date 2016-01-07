@@ -55,7 +55,7 @@ function storeIcons(icons) {
 /**
  * @param {Array} urls
  */
-function iconSpider(urls) {
+function iconSpider(url) {
 	urls.forEach(function(item, index){
 		console.log('process : %s %s', index, item);
 		request(item, function(error,response,body){
@@ -69,7 +69,10 @@ function iconSpider(urls) {
 	});
 }
 
+
+function spide
 iconSpider(website);
+
 
 //storeIcons(iconList);
 
